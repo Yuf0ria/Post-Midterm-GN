@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -29,6 +30,24 @@ public class UISCript_DogBreed : MonoBehaviour
         //once click fetch aopi
     }
     
+    //No of api when called, Ienumarator try ko
+    IEnumerator FetchAPI()
+    {
+        //return when null
+        yield return null;
+    }
+    
+    //isntatiate page
+    private void InstantiatePage()
+    {
+        GameObject page = Instantiate(textPrefab, textContainer);
+    }
+    //NextPage()
+    //PreviousPage()
+    //Count Clicked, CurrentPage()
+    //camera jumps to next or previous page, MoveCamToPage(int numPage)
+    
+
     
 
 }
